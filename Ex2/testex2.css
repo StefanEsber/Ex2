@@ -1,0 +1,49 @@
+a{
+    color: #349469;
+    text-decoration: none;
+}
+body{
+    font-family: var(--font-family);
+    background-color: #262c34;
+}
+p{
+    color: #adbac7;
+    font-size: 16px;
+    display: block;
+    text-align: left;
+    padding: 10px;
+    padding-left:  600px;
+    margin: 7px;
+    width: 65%;
+
+    
+}
+p style{
+    text-align: center;
+}
+ h2 a{
+    opacity: 0;
+}
+ a:hover{
+    opacity: 1;
+    text-decoration: none;
+ }
+ h3 a{
+     opacity: 0;
+ }
+
+ ul{
+    color: #adbac7;
+    
+ }
+ ul li {
+     list-style-type: disc;
+    
+ }
+ ul ul li{
+     list-style-type: circle;
+     padding: 0;
+     margin: 0;
+     font-weight: bold;
+
+ }

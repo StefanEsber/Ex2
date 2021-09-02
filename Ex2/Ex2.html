@@ -1,84 +1,85 @@
-            <!DOCTYPE html>
-            <html lang="en">
-            <head>
-                <meta charset="UTF-8">
-                <title>Exercise 2</title>
-                <link rel="stylesheet" href="testex2.css">
-            </head>
-            <body>
-                <main>
-                <h2 id="Exercise2;" tabindex="-1">
-                <a href="#Exercise2" aria-hidden="true">#</a>  Exercise 2: CSS</h2>
+                    <!DOCTYPE html>
+                    <html lang="en">
+                    <head>
+                        <meta charset="UTF-8">
+                        <title>Exercise 2</title>
+                        <link rel="stylesheet" href="testex2.css">
+                    </head>
+                    <body>
+                        <main>
+                        <h2 id="Exercise2;" tabindex="-1">
+                        <a href="#Exercise2" aria-hidden="true">#</a>  Exercise 2: CSS</h2>
+                        <p>The goal with this execise is to teach you the basic in css.
+                        Before you start working on it you are recommended to:
+                        </p>
                 
-                <p>The goal with this execise is to teach you the basic in css.
-                    Before you start working on it you are recommended to:</p>
-        
-            <ul>
-            <li>View the following videos:
-            <ul>
-            <li style="list-style-type: circle;"><a href="https://peppel-g.github.io/course-material/lectures/css/#lecture-material">CSS</a></li> 
-            </ul>
-            </li>
-            </ul>
+                    <ul>
+                    <li>View the following videos:
+                    <ul>
+                    <li style="list-style-type: circle;"><a href="https://peppel-g.github.io/course-material/lectures/css/#lecture-material">CSS</a></li> 
+                    </ul>
+                    </li>
+                    </ul>
+                
+                <h3 id="introcss" tabindex="-1">
+                    <a href="#introcss" aria-hidden="true">#</a>
+                    Introduction to CSS
+                </h3>
+                <p>A web browser's primary purpose is to render the webpages we visit 
+                    ("to render" does in this context mean to visualize on the screen). These days, almost 
+                    all modern web browsers 
+                    render the different HTML tags the same way, but back in the old days (in the beginning of
+                    <a style="font-weight: bold;"href="https://en.wikipedia.org/wiki/Browser_wars">the browser wars</a>), a common problem for web
+                    developers was that their websites looked good in one web browser, but completely wrong in another one.</p>
 
-        <h3 id="introcss" tabindex="-1">
-            <a href="#introcss" aria-hidden="true">#</a>
-            Introduction to CSS
-        </h3>
-        <p>A web browser's primary purpose is to render the webpages we visit 
-            ("to render" does in this context mean to visualize on the screen). These days, almost 
-            all modern web browsers 
-            render the different HTML tags the same way, but back in the old days (in the beginning of
-            <a style="font-weight: bold;"href="https://en.wikipedia.org/wiki/Browser_wars">the browser wars</a>), a common problem for web
-            developers was that their websites looked good in one web browser, but completely wrong in another one.</p>
+                    <p>If you don't like the way web browsers render your webpage, you can tell them how to render it by using a style sheet language called CSS.
+                        Through it, you can for example specify:</p>
 
-            <p>If you don't like the way web browsers render your webpage, you can tell them how to render it by using a style sheet language called CSS.
-                 Through it, you can for example specify:</p>
+                    <ul>
+                        <li style="color:red;">The color of the text.</li>
+                        <li style="background-color: yellow; width: 240%">The background of an element.</li>
+                        <li style="font-size: 210%;">The size of the text.</li>
+                        <li style="width: 100px;"> The width of the element.</li>
+                    </ul>
+                    <p>CSS code can be applied to HTML elements on a webpage in three different ways:</p>
+                    
+                <ul class="square">
+                    <li>Using the <code>style</code> attribute.</li>
+                    <li>Using the <code >&ltstyle&gt</code> tag.</li>
+                    <li>Using the <code>&ltlink&gt</code> tag and an external CSS file.</li>
+                </ul>
+                    <p>
+                    The simplest way to apply CSS is by using the <code>style</code>  attribute, and write the CSS code as the value of this attribute. This way,
+                        the CSS code will consist of a set of declarations (property-value pairs describing how
+                        the element should be styled), and the element it contains.
+                    </p>
+                    <p>The second simplest way to apply css code to HTML elements is by
+                        using the <code>&ltstyle&gt</code>
+                        tag  and write the CSS code inside that one. When using CSS this way,
+                        the CSS code consists of a set of rules, where each rule consists
+                        of a selector(describing wich HTML elements the rule should be styled).
+                        The primary benefit with this approach over the previous approach is that you can use CSS rulesto apply the same 
+                        CSS declarations to multiple different HTML elements at the same time(e.g.
+                        change the font size of all paragphs using a single rule).
+                    </p>
 
-            <ul>
-                <li style="color:red;">The color of the text.</li>
-                <li style="background-color: yellow; width: 240%">The background of an element.</li>
-                <li style="font-size: 210%;">The size of the text.</li>
-                <li style="width: 100px;"> The width of the element.</li>
-            </ul>
-            <p>CSS code can be applied to HTML elements on a webpage in three different ways:</p>
-            <ul>
-            <li style="list-style-type: square;">Using the <code>style</code> attribute.</li>
-            <li style="list-style-type: square;">Using the <code >&ltstyle&gt</code> tag.</li>
-            <li style="list-style-type: square;">Using the <code>&ltlink&gt</code> tag and an external CSS file.</li>
-        </ul>
-            <p>
-            The simplest way to apply CSS is by using the <code>style</code>  attribute, and write the CSS code as the value of this attribute. This way,
-                the CSS code will consist of a set of declarations (property-value pairs describing how
-                the element should be styled), and the element it contains.
-            </p>
-            <p>The second simplest way to apply css code to HTML elements is by
-                using the <code>&ltstyle&gt</code>
-                tag  and write the CSS code inside that one. When using CSS this way,
-                the CSS code consists of a set of rules, where each rule consists
-                of a selector(describing wich HTML elements the rule should be styled).
-                The primary benefit with this approach over the previous approach is that you can use CSS rulesto apply the same 
-                CSS declarations to multiple different HTML elements at the same time(e.g.
-                change the font size of all paragphs using a single rule).
-            </p>
+                    <p style="width: 325px; margin: auto;">The best way of using CSS is by writing it in an external CSS file (a file with the extension .css), and then link to that 
+                        document from the HTML document using the <code>&ltlink&gt</code>tag.
+                        his way, your CSS code can be re-used across multiple HTML documents, and it can also be cached by the web browser. When using CSS, it is important to remember that web browsers use the box model. In this model, each HTML element is represented as box (rectangle) consisting of 4 layers.
+                        These are, from inside out, content, padding, border and margin.
 
-            <p style="width: 325px; margin: auto;">The best way of using CSS is by writing it in an external CSS file (a file with the extension .css), and then link to that 
-                document from the HTML document using the <code>&ltlink&gt</code>tag.
-                his way, your CSS code can be re-used across multiple HTML documents, and it can also be cached by the web browser. When using CSS, it is important to remember that web browsers use the box model. In this model, each HTML element is represented as box (rectangle) consisting of 4 layers.
-                 These are, from inside out, content, padding, border and margin.
-
-            </p>
-            <h3 id="the-task">
-                <a href="#the-task" aria-hidden="true">#</a>
-                The Task
-            </h3>
-            <p>Your task is to create an HTML file containing a copy of the content in this chapter (Exercise 2). Try to make the visual appearance of your HTML 
-                code as similar to the text on this page as possible.
-                 Write your CSS code either in the HTML file or in a separate CSS file.</p>
-        </main>
-        <p span style="display: inline; background-color: lime; color: blue; 
-        text-decoration: line-through; margin-left: 30%; font-style: italic; font-size: 75%; font-weight: bold; padding: 0;">
-            Good Luck!. </span></p>😊
-            <p></p>
-            </body>
-            </html>
+                    </p>
+                    <h3 id="the-task">
+                        <a href="#the-task" aria-hidden="true">#</a>
+                        The Task
+                    </h3>
+                    <p>Your task is to create an HTML file containing a copy of the content in this chapter (Exercise 2). Try to make the visual appearance of your HTML 
+                        code as similar to the text on this page as possible.
+                        Write your CSS code either in the HTML file or in a separate CSS file.</p>
+                </main>
+                <p span style="display: inline; background-color: lime; color: blue; 
+                text-decoration: line-through; margin-left: 30%; font-style: italic; font-size: 75%; font-weight: bold; padding: 0;">
+                    Good Luck!. </span></p>😊
+                    <p></p>
+                    </body>
+                    </html>
